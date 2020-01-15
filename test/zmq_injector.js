@@ -1,6 +1,6 @@
 var events = require('events'),
   log = require('log4node'),
-  zmq = require('zmq');
+  zmq = require('zeromq');
 
 var target = process.argv[2];
 var type = process.argv[3];
