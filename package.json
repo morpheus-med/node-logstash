@@ -3,7 +3,12 @@
   "description": "Logstash implementation in node JS",
   "version": "0.0.5",
   "author": "Bertrand Paquet <bertrand.paquet@gmail.com>",
-  "keywords": ["logstash", "log", "zmq", "zeromq"],
+  "keywords": [
+    "logstash",
+    "log",
+    "zmq",
+    "zeromq"
+  ],
   "main": "./lib/log4node.js",
   "homepage": "https://github.com/bpaquet/node-logstash",
   "repository": {
@@ -25,26 +30,27 @@
     "test": "./test-runner.sh"
   },
   "dependencies": {
+    "crypto-browserify": "^3.12.0",
     "log4node": "0.1.6",
     "optimist": "0.6.1",
     "mkdirp": "0.5.1",
-    "async": "0.9.0",
-    "lru-cache": "2.7.x"
+    "async": "^3.1.0",
+    "lru-cache": "2.7.x",
+    "uuid": "^3.3.3"
   },
-  "optionalDependencies":{
-    "aws-sdk": "2.7.x",
-    "amqplib": "0.4.0",
-    "zmq": "2.15.3",
+  "optionalDependencies": {
+    "aws-sdk": "2.505.0",
+    "amqplib": "^0.5.5",
+    "zeromq": "^5.2.0",
     "moment": "2.9.0",
-    "redis": "2.2.5",
-    "ws": "0.8.0",
-    "oniguruma": "5.1.x",
+    "redis": "2.8.0",
+    "ws": "7.2.1",
+    "oniguruma": "7.2.1",
     "msgpack": "1.0.x",
-    "geoip-lite": "1.1.6",
+    "geoip-lite": "1.4.0",
     "maxmind": "0.6.x",
     "maxmind-geolite-mirror": "1.0.x",
-    "http-proxy-agent": "1.x",
-    "https-proxy-agent": "1.x",
+    "https-proxy-agent": "5.0.0",
     "lumberjack-protocol": "git://github.com/bpaquet/node-lumberjack-protocol.git",
     "hep-js": "0.0.4"
   },
